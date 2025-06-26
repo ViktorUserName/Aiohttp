@@ -64,6 +64,7 @@ async def get_full_url(request):
 
 
 app = web.Application()
+
 app.add_routes([web.post('/short', create_short_url)])
 app.add_routes([web.get('/full/{shortlink}', get_full_url)])
 
